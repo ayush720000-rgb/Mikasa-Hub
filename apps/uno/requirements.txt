@@ -1,0 +1,6 @@
+# Supported Python: 3.11 to 3.14 (pymongo 4.20 needs 3.11 or newer).
+# The job-queue extra pulls in APScheduler 3.11, which no longer imports pkg_resources,
+# so the old setuptools pin is not needed any more.
+python-telegram-bot[job-queue]==22.8
+# MongoDB driver (MONGODB_URI). Pinned; it ships Linux wheels for Python 3.11 to 3.14.
+pymongo==4.20.1
